@@ -1,0 +1,19 @@
+version: 0.2
+env:
+  variables:
+    KATALON_API_KEY: ebeb0e7a-4adf-49da-86a2-edad7bfe03e8
+phases:
+  pre_build:
+    commands:
+      - docker pull katalonstudio/katalon
+  build:
+    commands:
+      - docker run -t --rm -v "$(pwd)":/katalon/katalon/source katalonstudio/katalon katalon-execute.sh -apiKey=$KATALON_API_KEY -browserType="Chrome" -retry=1 -retryStrategy=immediately -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" --config -webui.autoUpdateDrivers=true
+artifacts:
+  files:
+    - report/*
+reports: #New
+  KatalonTestReports: # CodeBuild will create a report group called "KatalonTestReport".
+    files: #Store all of the files
+      - 'report/JUnit_Report.xml'
+
