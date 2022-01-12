@@ -3,7 +3,7 @@
    <description></description>
    <name>Simple Test Suite Collection</name>
    <tag></tag>
-   <delayBetweenInstances>10</delayBetweenInstances>
+   <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>
    <maxConcurrentInstances>4</maxConcurrentInstances>
    <testSuiteRunConfigurations>

@@ -101,3 +101,7 @@ WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Go 
 
 WebUI.closeBrowser()
 
+WebUI.delay(300)
+
+
+
