@@ -1,7 +1,9 @@
 version: 0.2
 env:
+  parameter-store:
+    KATALON_API_KEY: /katalon-codebuild-3/KATALON_API_KEY
   variables:
-    KATALON_API_KEY: ebeb0e7a-4adf-49da-86a2-edad7bfe03e8
+    KATALON_API_KEYz: ebeb0e7a-4adf-49da-86a2-edad7bfe03e8
 phases:
   pre_build:
     commands:
