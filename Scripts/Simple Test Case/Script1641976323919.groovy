@@ -91,7 +91,7 @@ WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/butto
 WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/p_Seoul CURA Healthcare Center'), 
     'Seoul CURA Healthcare Center')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/p_28012022'), '28/01/2022')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/p_28012022'), '28/01/2022')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/p_Yes'), 'Yes')
 
