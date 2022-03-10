@@ -1,7 +1,7 @@
 version: 0.2
 env:
   secrets-manager:
-    KATALON_API_KEY: CodebuildDemo/KATALON_API_KEY
+    KATALON_API_KEY: CodebuildDemo:KATALON_API_KEY
 phases:
   pre_build:
     commands:
